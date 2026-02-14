@@ -19,7 +19,7 @@ def run_cli():
     translation = input(f"{'Translation (spanish)':.<20}: ").strip()
     use_case = input(f"{'Enter an example sentence using the word:\n'}").strip()
 
-    back = f"{translation} \n Example:\n{use_case}"
+    back = f"{translation}<br><br><b>Example:</b><br><i>{use_case}</i>"
 
     success, message = add_note(front, back)
 
