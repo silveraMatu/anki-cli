@@ -1,7 +1,10 @@
 import requests
 import json
+from pathlib import Path
 
-with open("./src/config.json", "r") as file:
+config_path = Path(__file__).parent / "config.json"
+
+with open(config_path, "r") as file:
   config = json.load(file)
 
 def add_note(front, back, deck=config.get("DECK_NAME")):
