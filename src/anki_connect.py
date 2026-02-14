@@ -11,7 +11,7 @@ def add_note(front, back, deck=config.get("DECK_NAME")):
 
   payload = {
     "action": "addNote",
-    "version": "6",
+    "version": 6,
     "params": {
       "note": {
         "deckName": deck,
